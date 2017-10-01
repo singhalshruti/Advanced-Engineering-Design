@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<title>
+	 		ASPCA-Pet Health Insurance	
+	  	</title>
+	</head>
+	<body>
+
+
+	<form action="part4" method="post">
+	  <div class="container">	
+
+		<img src="Header.PNG" width="1202" >
+		
+  	
+  		<div class="row">
+  			
+						  			<div class="col-sm-6">
+
+										  	<div class="form-group row">
+										    <label class="col-sm-4 form-control-label">Your Information</label>
+										    <label>
+										    	<input name="newaddress" type="checkbox" value="Yes"> Check here if this is a new address
+										  	</label>	
+										  	</div>
+
+										  	<div class="form-group row">
+										    <label class="col-sm-2 form-control-label">Name:</label>
+										      <div class ="col-sm-8"><input name="name" type="text" class="form-control" ></div>
+										    </div>
+
+										  <div class="form-group row">
+										    <label class="col-sm-2 form-control-label">Address:</label>
+										     <div class ="col-sm-8"> <input name="address" type="text" class="form-control" ></div>
+										  </div>
+
+										  <div class="form-group row">
+										    <label class="col-sm-2 form-control-label">State, City, Zip:</label>
+										    <div class ="col-sm-8">  <input name="state" type="text" class="form-control" ></div>
+										  </div>
+
+										  <div class="form-group row">
+										    <label class="col-sm-2 form-control-label">Phone:</label>
+										    <div class ="col-sm-8">   <input name="phone" type="text" class="form-control"></div>
+										    </div>
+
+										    <div class="form-group row">
+										      <label class="col-sm-2 form-control-label">Email:</label>
+										    <div class ="col-sm-8">   <input name="email" type="text" class="form-control" ></div>
+										  </div>
+								</div>		  
+
+							<div class="col-sm-6">
+								<div class="form-group row">
+							    <label class="col-sm-4 form-control-label">Pet Information</label>	
+							  	</div>
+
+							  	<div class="form-group row">
+							    <label class="col-sm-2 form-control-label">Account Number:</label>
+							    <div class ="col-sm-8">  <input name="accountnumber" type="text" class="form-control" ></div>
+							    </div>
+
+							    <div class="form-group row">
+							     <label class="col-sm-2 form-control-label">Name:</label>
+							     <div class ="col-sm-8"> <input name="petname" type="text" class="form-control" ></div>
+							    </div>
+
+							    <div class="form-group row">
+							     <label class="col-sm-2 form-control-label">Breed:</label>
+							     <div class ="col-sm-8">  <input name="breed" type="text" class="form-control" ></div>
+							    </div>
+
+							    <div class="form-group row">
+							    <label class="col-sm-2 form-control-label">Age:</label>
+							     <div class ="col-sm-8"> <input name="age" type="text" class="form-control"></div>
+							     </div>
+							     <div class="form-group row">
+							      <label class="col-sm-2 form-control-label">Gender:</label>
+							     <div class ="col-sm-8"> <input name="gender" type="text" class="form-control"></div>
+							  </div>
+
+							</div>	
+	  </div>	
+  		<img src="Second.PNG" width="1200" >
+	
+	 
+
+	  <fieldset class="form-group">
+    <label>Story of Occurrence/Diagnosis - Please describe this incident, including dates, details and symptoms leading up to it</label>
+    <input name="describe" type="text" class="form-control" />
+ 	 </fieldset>
+
+ 	 <div class="row">
+  			
+  			<div class="col-sm-6">
+
+				  	<div class="form-group row">
+				    <label class="col-sm-4 form-control-label">This claim is related to:</label>
+				    <label class="checkbox-inline">
+  				<input name="relateto" type="checkbox" value="Accident"> Accident
+			</label>
+			<label class="checkbox-inline">
+  			<input name="relateto" type="checkbox" value="Illness"> Illness
+			</label>
+			<label class="checkbox-inline">
+ 			 <input name="relateto" type="checkbox" value="Wellness"> Wellness
+			</label>	
+				  	</div>
+
+
+				  	<div class="form-group row">
+				    <label class="col-sm-4 form-control-label">Is this claim an estimate for future treatment?</label>
+				      <div class ="col-sm-8">
+				      	 <label class="checkbox-inline">
+  				<input name="estimateforfuture" type="checkbox" value="Yes"> Yes
+			</label>
+			<label class="checkbox-inline">
+  			<input name="estimateforfuture" type="checkbox" value="No"> No
+			</label></div>
+				    </div>
+
+
+				  <div class="form-group row">
+				    <label class="col-sm-4 form-control-label">Total amount claimed:</label>
+				     <div class ="col-sm-8"> <input name="amountclaimed" type="text" class="form-control"></div>
+				  </div>
+
+				  <div class="form-group row">
+				    <label class="col-sm-4 form-control-label">Date illness/injury first occurred:</label>
+				    <div class ="col-sm-8">  <input name="dateofoccurrence" type="text" class="form-control"></div>
+				  </div>
+
+				  <div class="form-group row">
+				    <label class="col-sm-4 form-control-label">Send payment to:</label>
+				    <div class ="col-sm-8">    <label class="checkbox-inline">
+  				<input name="payment" type="checkbox" value="Me"> Me
+			</label>
+			<label class="checkbox-inline">
+  			<input name="payment" type="checkbox" value="Veterinarian"> Veterinarian
+			</label></div>
+				    </div>
+
+				    
+		</div>		  
+
+		<div class="col-sm-6">
+			<div class="form-group row">
+		    <label class="col-sm-2 form-control-label">Veterinarian:</label>
+		    		    <div class ="col-sm-8">  <input name="vetname" type="text" class="form-control">	</div>
+		  	</div>
+
+		  	<div class="form-group row">
+		    <label class="col-sm-2 form-control-label">Clinic name:</label>
+		    <div class ="col-sm-8">  <input name="clinicname" type="text" class="form-control"></div>
+		    </div>
+
+		    <div class="form-group row">
+		     <label class="col-sm-2 form-control-label">Phone:</label>
+		     <div class ="col-sm-8"> <input name="phone" type="text" class="form-control"></div>
+		    </div>
+
+		    <div class="form-group row">
+		     <label class="col-sm-2 form-control-label">Fax:</label>
+		     <div class ="col-sm-8">  <input name="fax" type="text" class="form-control"></div>
+		    </div>
+
+		    <div class="form-group row">
+		    <label class="col-sm-4 form-control-label">Did any other veterinarian treat your pet?:</label>
+		     <div class ="col-sm-8">
+		      <label class="checkbox-inline">
+  				<input name="othervet" type="checkbox" value="Yes"> Yes
+			</label>
+			<label class="checkbox-inline">
+  			<input name="othervet" type="checkbox" value="No"> No
+			</label>
+		</div>
+		     </div>
+
+		     <div class="form-group row">
+		      <label class="col-sm-4 form-control-label">Is this a new condition?: </label>
+		     <div class ="col-sm-8"> <label class="checkbox-inline">
+  				<input name="newcondition" type="checkbox" value="Yes"> Yes
+			</label>
+			<label class="checkbox-inline">
+  			<input name="newcondition" type="checkbox" value="No"> No
+			</label></div>
+		  </div>
+
+		</div>	
+	  </div>
+
+ 	  <img src="three.PNG" width="1208" >
+
+		<div class="row">
+  			
+  			<div class="col-sm-6">
+
+				  	<div class="form-group row">
+				    <label class="col-sm-4 form-control-label">Signature of Pet Owner:</label>
+				    <div class ="col-sm-8"> <input name="signature" type="text" class="form-control"></div>	
+				  	</div>
+				  	</div>
+
+				  	<div class="col-sm-6">
+				  	<div class="form-group row">
+				    <label class="col-sm-6 form-control-label"> Date:</label>
+				    <div class ="col-sm-4"> <input name="date" type="text" class="form-control"></div>	
+				  	</div>
+				  	</div>
+
+					<img src="End.PNG" width="1200" >
+
+		</div>  
+
+			<input type="submit" value="Submit">
+	</div>		
+</form>
+
+</body>
+</html>
+
